@@ -1,0 +1,46 @@
+html, body { margin: 0px; padding: 0px; overflow-y: scroll; border: 0px; font-size: 1em; font-family: 'Slabo 27px', serif;}
+
+header {
+      text-align: center;
+      background: black;
+      background-size: cover;
+      color: #B40404;
+      }
+   h1 {
+      padding-top: 20px; 
+      margin: 0;
+      font-size: 4em;
+      font-family: 'Ravi Prakash',       cursive;
+      }
+    a {
+      color: silver;
+      text-decoration: none;  
+      }
+      
+.nav ul {
+      padding: 20px;
+      }
+.nav ul li {
+      display: inline-block;
+      padding: 0px 10px 0px 10px;
+      font-size: 1.3em;
+      }
+.nav ul li: hover {
+      background-color: #ccc; 
+      text-decoration: none; 
+      }
+h2 {
+      padding-top: 20px; 
+      }
+article {
+      max-width: 60%;
+      padding-top: 10px;
+      margin: 0 auto;
+      }
+footer {
+      height: 40px; 
+      width: 100%; 
+      margin-top: 60px; 
+      background-color: black; 
+      }
+    
