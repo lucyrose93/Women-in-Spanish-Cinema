@@ -7,73 +7,74 @@
     </head>
 <body>
 
+	<!--FA FA ICONS-->
+<!--Google Fonts-->
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+  <ul>
+    <li>Women in Spanish Horror</li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#portfolio">Films</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+ </div>
+</nav>
 
-<div id="container">
-  
-  
-    <nav>
-        <ul>
-            <li><a href="#">about</a>
-                            <ul>
-                                 <li><a href="#">spanish horror</a></li>
-                                 <li><a href="#">the project</a></li>
-                            </ul>
-
-            </li>
-        
-                                <li><a href="#">chapters</a>
-            <!-- First Tier Drop Down -->
-            <ul>
-                <li><a href="#">motherhood</a>
-                    <ul>
-                       <li><a href="#">theory</a></li>
-                        <li><a href="#">films</a>
-                            <ul>
-                                 <li><a href="#">the others</a></li>
-                                 <li><a href="#">the orphanage</a></li>
-                                 <li><a href="#">hierro</a>
-                            </ul>
-                            <li><a href="#">gallery</a></li>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#">the gaze</a>
-                    <ul>
-                        <li><a href="#">theory</a></li>
-                        <li><a href="#">films</a>
-                            <ul>
-                                <li><a href="#">thesis</a>
-                                <li><a href="#">julia's eyes</a></li>
-                                <li><a href="#">sleep tight</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">gallery</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">chaos</a>
-            	<!-- Second Tier Drop Down -->
-                <ul>
-                    <li><a href="#">theory</a></li>
-                    <li><a href="#">films</a>
-                        <!-- Third Tier Drop Down -->
-                        <ul>
-                            <li><a href="#">[REC]</a></li>
-                               </ul>
-                    </li>
-                    <li><a href="#">gallery</a></li>
-                </ul>
-                </li>
-            </ul>
-            </li>
-            <li><a href="#">press</a></li>
-            <li><a href="#">contact</a></li>
-        </ul>
-    </nav>
-  
-  
-  
-  
+<div class="main-pic">
+<img src="Hierro7.jpg" alt="Screen grab: Hierro" class="mySlides"></img>
+<img src="Hierro4.jpg" alt="Screen grab: Hierro" class="mySlides"></img>
+<img src="Hierro5.jpg" alt="Screen grab: Hierro" class="mySlides"></img>
+<img src="mientras4.jpg" alt="Screen grab: Hierro" class="mySlides"></img>
+<img src="mientras5.jpg" alt="Screen grab: Hierro" class="mySlides"></img>
+<img src="mientras1.jpg" alt="Screen grab: Hierro" class="mySlides"></img>
+<img src="Regresion2.jpg" alt="Screen grab: Hierro" class="mySlides"></img>
+<img src="TheOrphanage1.jpg" alt="Screen grab: Hierro" class="mySlides"></img>
+<img src="TheOthers1.jpg" alt="Screen grab: Hierro" class="mySlides"></img>
+<img src="TheOthers8.jpg" alt="Screen grab: Hierro" class="mySlides"></img>
+<img src="TheOthers3.jpg" alt="Screen grab: Hierro" class="mySlides"></img>
 </div>
+
+<div class="about section" id="about">
+  <h1>About</h1>
+  <p>Info</p>
+  <img src="#"/>
+</div>
+<div class="portfolio-h1" id="portfolio">
+  <h1>Portfolio</h1>
+</div>
+<div class="portfolio">
+  <img src="#"/>
+  <img src="#"/>
+  <img src="#"/>
+  <img src="#"/>
+</div>
+<div class="contact section" id="contact">
+  <h1>Contact</h1>
+  <p>My contact details.</p>
+</div>
+<footer>
+  &copy; Copyright 2016
+  
+</footer>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</script>
+
 </body>
 
 </html>
