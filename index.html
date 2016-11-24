@@ -1,78 +1,95 @@
-<!DOCTYPE html>
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great|Montserrat|Montserrat+Subrayada|Open+Sans+Condensed:300|Raleway');
 
-<head>
-    <link href="style.css" type = "text/css" rel="stylesheet"/>
-    <title>Navigation with dropdown menu</title>
-    </head>
-<body>
+body {
+    margin: 0 auto;
+  	background: #212121;
+	font-size: 1em;
+	line-height: 1.2em;
+	word-wrap:break-word !important;
+	font-family: 'Fredericka the Great', cursive;
+	}
 
+h1 {
+	font-size: 2em;
+	margin-right: 5%;
+	color: white;
+	float: right;
+	margin-top: -15px;
+}	
 
-<div id="container">
-  
-  
-    <nav>
-        <ul>
-            <li><a href="#">about</a>
-                <ul>
-                    <li><a href="#">spanish horror</a></li>
-                    <li><a href="#">the project</a></li>
-                </ul>
+#container {
+	margin: 0 auto;
+}
 
-            </li>
-        
-                                <li><a href="#">chapters</a>
-            <!-- First Tier Drop Down -->
-            <ul>
-                <li><a href="#">motherhood</a>
-                    <ul>
-                       <li><a href="#">theory</a></li>
-                        <li><a href="#">films</a>
-                            <ul>
-                                 <li><a href="#">the others</a></li>
-                                 <li><a href="#">the orphanage</a></li>
-                                 <li><a href="#">hierro</a>
-                            </ul>
-                            <li><a href="#">gallery</a></li>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#">the gaze</a>
-                    <ul>
-                        <li><a href="#">theory</a></li>
-                        <li><a href="#">films</a>
-                            <ul>
-                                <li><a href="#">thesis</a>
-                                <li><a href="#">julia's eyes</a></li>
-                                <li><a href="#">sleep tight</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">gallery</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">chaos</a>
-            	<!-- Second Tier Drop Down -->
-                <ul>
-                    <li><a href="#">theory</a></li>
-                    <li><a href="#">films</a>
-                        <!-- Third Tier Drop Down -->
-                        <ul>
-                            <li><a href="#">[REC]</a></li>
-                               </ul>
-                    </li>
-                    <li><a href="#">gallery</a></li>
-                </ul>
-                </li>
-            </ul>
-            </li>
-            <li><a href="#">press</a></li>
-            <li><a href="#">contact</a></li>
-        </ul>
-    <h1>women in spanish horror</h1>
-    </nav>
-  
-   
-  
-</div>
-</body>
+p {
+	text-align: center;
+}
 
-</html>
+nav {
+	margin: 0 auto;
+	background-color: #E64A19;
+}
+
+nav ul {
+	padding: 0;
+    margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	background-color: #E64A19;
+	}
+
+nav a {
+	display:block;
+	padding: 0px 15px;	
+	color:#FFF;
+	font-size: 20px; 
+	line-height: 60px;
+	text-decoration:none;
+}
+
+nav a:hover { 
+	background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; /* the height of the main nav */
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
+
+.slide1 {
+	width: 100%;
+	position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
