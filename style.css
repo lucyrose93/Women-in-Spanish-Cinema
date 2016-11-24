@@ -10,10 +10,11 @@ body {
 	}
 
 h1 {
-	font-size: 1em;
-	text-align: right;
-	margin-left: auto;
-	color: #FFF;
+	font-size: 2em;
+	margin-right: 5%;
+	color: white;
+	float: right;
+	margin-top: -15px;
 }	
 
 #container {
@@ -43,9 +44,9 @@ nav ul li {
 
 nav a {
 	display:block;
-	padding:0 10px;	
+	padding: 0px 15px;	
 	color:#FFF;
-	font-size:20px;
+	font-size: 20px; 
 	line-height: 60px;
 	text-decoration:none;
 }
@@ -81,6 +82,13 @@ nav ul ul ul li {
 	left:170px;
 }
 
+.slide1 {
+	width: 100%;
+	position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
 
 /* Change this in order to change the Dropdown symbol */
 li > a:after { content:  ' +'; }
