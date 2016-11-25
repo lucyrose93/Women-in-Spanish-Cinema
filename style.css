@@ -92,25 +92,64 @@ nav {
 body{
   font-family: 'David Libre', serif;
 }
-.portfolio-h1 {
-  margin: 10px auto;
-  padding-top: 80px;
-  width:70%;
-  font-size:2em;
-  margin-bottom:20px;
+
+/*PORTFOLIO*/
+.wrapper{font-size:0;}/*for inline block spacing*/
+
+.wrapper a{
+  display:inline-block;
+  width:25%;
+  height:50vh;
+  position:relative;
 }
-.portfolio {
-  display:flex;
-  justify-content:space-between;
-  flex-wrap: wrap;
-  margin: 10px auto;
-  width:73%;
+.wrapper a img {
+  height:100%; 
+  width:100%;
+  object-fit:cover;}
+.wrapper a:before, a:after{
+  width:100%;
+  position:absolute;
+  opacity:0;
+  transition:opacity 0.3s ease;
 }
-.portfolio img {
-  margin:20px 10px;
-  width: 20%;
-  height: 20%;
+.wrapper a:before{
+  content:'';
+  height:100%;
+  background:rgba(122,157,83,0.8);
 }
+.wrapper a:after{
+  content:attr(data-title);
+  font-size:24px;
+  top:calc(50% - 0.5em);
+  left:0;
+  text-align:center;
+  color:#fff;
+  text-transform:uppercase;
+}
+.wrapper a:hover:before, a:hover:after{
+  opacity:1;
+}
+
+@media (max-width:650px){
+a{
+  width:50%;
+  height:100vh;
+}
+}
+@media (max-width:480px){
+a{
+  width:100%;
+}
+}
+
+.film p {
+  margin-bottom: 30px;
+}
+.film h2{
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
 .contact h1{
   font-size:2em;
   margin-bottom:20px;
