@@ -73,28 +73,39 @@ li a {
   text-decoration: none;
 }
 
+li a:hover {
+  color: yellow
+}
+
 nav {
   background-color: silver;
+  z-index: 1;
 }
 .main-pic img {
   width: 100%;
 }
 .section {
   margin: 80px auto;
-  padding-top: 80px;
+  padding-top: 100px;
   width:70%;
   max-width: 960px;
 }
 .about h1 {
   font-size:2em;
-  margin-bottom:20px;
+  margin-bottom: 20px;
+}
+.about p {
+  margin-bottom: 100px;
 }
 body{
   font-family: 'David Libre', serif;
 }
 
 /*PORTFOLIO*/
-.wrapper{font-size:0;}/*for inline block spacing*/
+.wrapper{
+  font-size:0;
+  z-index: -1;
+  }/*for inline block spacing*/
 
 .wrapper a{
   display:inline-block;
@@ -145,9 +156,11 @@ a{
 .film p {
   margin-bottom: 30px;
 }
+
 .film h2{
   font-size: 1.5em;
   margin-bottom: 15px;
+  padding-top: 100px;
 }
 
 .contact h1{
