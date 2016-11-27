@@ -57,7 +57,7 @@ nav {
   width: 100%;
   top: 0px;
   z-index: 1;
-  background-color: #351E16;
+  background-color:  #FFFFFF; /*UPDATE*/
 }
 
 ul {
@@ -79,14 +79,11 @@ li {
 
 li a {
   text-decoration: none;
-  color:   #862d2d; 
-}
-.page-title {
-  color: rgba(122,157,83,0.8);
+  color: #0B0F0E;   
 }
 
 li a:hover {
-  color: #ffffcc; 
+  color: rgba(122,157,83,0.8); 
 }
 
 .main-pic img {
@@ -187,12 +184,19 @@ form {
   line-height: 2em;
 }
 input {
-  background-color: #862d2d;
+  background-color: #FFFFFF;
   border: none;
   font-family: 'Lora', sans-serif;
 }
+
 .buttons {
-  color: #ffffcc;
+  color: #0B0F0E;
+  font-family: 'Lora', sans-serif;
+}
+
+input:hover {
+  background-color: rgba(122,157,83,0.8);
+
 }
 footer {
   padding: 30px;
