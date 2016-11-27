@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great|Montserrat|Montserrat+Subrayada|Open+Sans+Condensed:300|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
 /*reset styling*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -8,10 +10,10 @@ small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
+table, caption, nav, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
+menu, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -26,8 +28,11 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 body {
-  line-height: 1;
-}
+  line-height: 1.5;
+  color: #ffffcc;
+  font-family: 'Lora';
+  background-color: #0B0F0E;
+} /*BACKGROUND COLOUR */
 ol, ul {
   list-style: none;
 }
@@ -50,6 +55,8 @@ nav {
   position: fixed;
   width: 100%;
   top: 0px;
+  z-index: 1;
+  background-color: #351E16;
 }
 
 ul {
@@ -71,16 +78,16 @@ li {
 
 li a {
   text-decoration: none;
+  color:   #862d2d; 
+}
+.page-title {
+  color: rgba(122,157,83,0.8);
 }
 
 li a:hover {
-  color: yellow
+  color: #ffffcc; 
 }
 
-nav {
-  background-color: silver;
-  z-index: 1;
-}
 .main-pic img {
   width: 100%;
 }
@@ -93,14 +100,11 @@ nav {
 .about h1 {
   font-size:2em;
   margin-bottom: 20px;
+  font-family: 'Fredericka the Great';
 }
 .about p {
   margin-bottom: 100px;
 }
-body{
-  font-family: 'David Libre', serif;
-}
-
 /*PORTFOLIO*/
 .wrapper{
   font-size:0;
@@ -108,10 +112,12 @@ body{
   }/*for inline block spacing*/
 
 .wrapper a{
-  display:inline-block;
+  display: inline-block;
   width:25%;
   height:50vh;
-  position:relative;
+  position: relative;
+  font-family: 'Fredericka the Great';
+
 }
 .wrapper a img {
   height:100%; 
@@ -161,11 +167,13 @@ a{
   font-size: 1.5em;
   margin-bottom: 15px;
   padding-top: 100px;
+  font-family: 'Fredericka the Great';
 }
 
 .contact h1{
   font-size:2em;
   margin-bottom:20px;
+  font-family: 'Fredericka the Great';
 }
 .contact p {
   padding-bottom: 20px;
@@ -173,8 +181,17 @@ a{
 form {
   line-height: 2em;
 }
-footer {
-  background-color: silver;
-  padding: 30px;
+input {
+  background-color: #862d2d;
+  border: none;
+  font-family: 'Lora', sans-serif;
 }
-
+.buttons {
+  color: #ffffcc;
+}
+footer {
+  padding: 30px;
+  color: rgba(122,157,83,0.8);
+  font-family: 'Fredericka the Great';
+  text-align: center; 
+}
