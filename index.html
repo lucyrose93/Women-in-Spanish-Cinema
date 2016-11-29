@@ -6,20 +6,20 @@
 
     <title>WOMEN IN SPANISH HORROR</title>
     </head>
-<body background="background.jpg">
+<body>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-<div class="container">
-  <ul>
-    <li><a href='#main' class="page-title">WOMEN IN SPANISH HORROR</a></li>
-    <li><a href='#about'>about</a></li>
-    <li><a href="#portfolio">films</a></li>
-    <li><a href="#contact">contact</a></li>
-  </ul>
- </div>
-</nav>
 
-<div class="main-pic" id='main'>
+<ul class="topnav" id="myTopnav">
+  <li><a class="active" href="#main">home</a></li>  
+  <li><a href="#about">about</a></li>
+  <li><a href="#portfolio">films</a></li>
+  <li><a href="#contact">contact</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+<div class="main-pic container" id='main'>
 <img src="Hierro7.jpg" alt="Screen grab" class="mySlides w3-animate-fading"></img>
 <img src="Hierro4.jpg" alt="Screen grab" class="mySlides w3-animate-fading"></img>
 <img src="Hierro5.jpg" alt="Screen grab" class="mySlides w3-animate-fading"></img>
@@ -31,14 +31,15 @@
 <img src="TheOthers3.jpg" alt="Screen grab" class="mySlides w3-animate-fading"></img>
 </div>
 
+</title>
+
 <div class="about section" id="about">
   <p>Welcome to "Women in Spanish Horror", an online exposé of my dissertation, "Experiencing the XX in the Spanish Horror Thriller”, wherein “XX” refers to both female chromosomes and X-rated viewing.</br><br>
 As an avid watcher of Spanish horror films, I came to realise that an overwhelming majority of these films feature female protagonists and dwell on themes of femininity.</br><br>
 In my dissertation, I drew on psychoanalysis and feminist film theory to examine why women play such a fundamental role in contemporary Spanish horror.</br><br>
 It is an increasingly important area of investigation. Over the last 20 years, horror has become highly exportable for Spain. Think Alejandro Amenábar’s <span>Los otros/The Others</span>(2001) starring Nicole Kidman, Guillermo del Toro’s twisted fairy-tale, <span>El laberinto del fauno/Pan’s Labyrinth</span> (2006), and, of course, <span>El orfanato/The Orphanage</span> (Bayona 2007).</br><br>
 Explore the film library below to find out how women are represented in the most commercially successful contemporary Spanish horror films.</br><br>
-N.B. I use the genre term "horror" here to encapsulate dark fantasy, psychological/Hitchcockean thrillers, and classic ghost stories. 
-</p>
+N.B. I use the genre term "horror" here to encapsulate dark fantasy, psychological/Hitchcockean thrillers, and classic ghost stories. </p>
 </div>
 
 <div class="wrapper" id="portfolio">
@@ -124,6 +125,17 @@ function carousel() {
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+<script>
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
 }
 </script>
 
