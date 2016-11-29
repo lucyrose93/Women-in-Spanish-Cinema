@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great|Montserrat|Montserrat+Subrayada|Open+Sans+Condensed:300|Raleway');
-@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab');
+
 
 /*reset styling*/
 html, body, div, span, applet, object, iframe,
@@ -19,7 +19,6 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -30,10 +29,11 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1.5;
   color: #ffffcc;
-  font-family: 'Lora', sans-serif;
   background-color: #0B0F0E;
-  text-align: justify;
-} /*BACKGROUND COLOUR */
+  text-align: left;
+} 
+
+/*BACKGROUND COLOUR */
 ol, ul {
   list-style: none;
 }
@@ -57,7 +57,8 @@ nav {
   width: 100%;
   top: 0px;
   z-index: 1;
-  background-color:  #FFFFFF; /*UPDATE*/
+  background-color: #261013;
+  
 }
 
 ul {
@@ -79,11 +80,13 @@ li {
 
 li a {
   text-decoration: none;
-  color: #0B0F0E;   
+  color: white;  
+  text-shadow: 0 0 3px white;
+ 
 }
 
 li a:hover {
-  color: rgba(122,157,83,0.8); 
+  color: #6C4130; 
 }
 
 .main-pic img {
@@ -94,14 +97,16 @@ li a:hover {
   padding-top: 100px;
   width:70%;
   max-width: 960px;
-}
-.about h1 {
-  font-size:2em;
-  margin-bottom: 20px;
-  font-family: 'Fredericka the Great';
+  font-family: 'Josefin Slab';
+  font-size: 1.5em;
 }
 .about p {
   margin-bottom: 100px;
+}
+.about p:first-letter {
+  font-size: 3em;
+  font-family: 'Fredericka the Great';
+  line-height: 1em;
 }
 /*PORTFOLIO*/
 .wrapper{
@@ -130,7 +135,7 @@ li a:hover {
 .wrapper a:before{
   content:'';
   height:100%;
-  background:rgba(122,157,83,0.8);
+  background:rgba(108, 65, 48, 0.8);
 }
 .wrapper a:after{
   content:attr(data-title);
@@ -139,7 +144,6 @@ li a:hover {
   left:0;
   text-align:center;
   color:#fff;
-  text-transform:uppercase;
 }
 .wrapper a:hover:before, a:hover:after{
   opacity:1;
@@ -148,7 +152,7 @@ li a:hover {
 @media (max-width:650px){
 a{
   width:50%;
-  height:100vh;
+  max.height:70vh; /*CHECK ON MOBILE DEVICES -- WAS SET TO 100 */
 }
 }
 @media (max-width:480px){
@@ -162,45 +166,60 @@ a{
 }
 
 .film h2{
-  font-size: 1.5em;
+  font-size: 2em;
   margin-bottom: 15px;
   padding-top: 100px;
   font-family: 'Fredericka the Great';
-  text-align: center;
 }
 span {
   font-style: italic;
 }
 
 .contact h1{
-  font-size:2em;
+  font-size:3em;
   margin-bottom:20px;
   font-family: 'Fredericka the Great';
 }
 .contact p {
   padding-bottom: 20px;
 }
+.email-me {
+  text-decoration: none;
+  color: #6C4130;
+}
 form {
-  line-height: 2em;
+  line-height:1.5em;
+  font-family: 'Frecericka the Great';
 }
 input {
   background-color: #FFFFFF;
   border: none;
-  font-family: 'Lora', sans-serif;
+  font-family: 'Fredericka the Great', sans-serif;
 }
 
 .buttons {
   color: #0B0F0E;
-  font-family: 'Lora', sans-serif;
+  font-family: 'Fredericka the Great', sans-serif;
+}
+.buttons:hover {
+  color: white;
 }
 
 input:hover {
-  background-color: rgba(122,157,83,0.8);
+  background-color: #6C4130;
 
 }
 footer {
   padding: 30px;
-  color: rgba(122,157,83,0.8);
+  font-size:3em;
+  font-weight: bold;
+  color: #6C4130;
   font-family: 'Fredericka the Great';
   text-align: center; 
+}
+footer a {
+    text-decoration: none;
+}
+footer a:hover{
+  color: white;
 }
