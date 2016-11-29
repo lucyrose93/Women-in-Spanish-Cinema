@@ -251,6 +251,8 @@ footer {
   color: #6C4130;
   font-family: 'Fredericka the Great';
   text-align: center; 
+  background-color: black;
+  width: 100%; 
 }
 footer a {
     color: #3F6498;
