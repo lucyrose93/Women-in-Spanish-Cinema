@@ -134,62 +134,59 @@ ul.topnav li.icon {display: none;}
   margin-top: 80px;
 
 }
-/*PORTFOLIO*/
-.wrapper{
-  font-size:0;
-  z-index: -1;
-  }/*for inline block spacing*/
+div.img:hover {
+    border: 5px solid white;
+}
 
-.wrapper a{
-  display: inline-block;
-  width:25%;
-  height:50vh;
-  position: relative;
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.desc{
   font-family: 'Fredericka the Great';
-
-}
-.wrapper a img {
-  height:100%; 
-  width:100%;
-  object-fit:cover;
-}
-.wrapper a:before, a:after{
-  width:100%;
-  position:absolute;
-  opacity:0;
-  transition:opacity 0.3s ease;
-}
-.wrapper a:before{
-  content:'';
-  height:100%;
-  background:rgba(108, 65, 48, 0.8);
-}
-.wrapper a:after{
-  content:attr(data-title);
-  font-size:24px;
-  top:calc(50% - 0.5em);
-  left:0;
-  text-align:center;
-  color:#fff;
-}
-.wrapper a:hover:before, a:hover:after{
-  opacity:1;
+  font-size: 1.5em;
 }
 
-@media (max-width:650px){
-a{
-  width:50%;
-  max.height:70vh; /*CHECK ON MOBILE DEVICES -- WAS SET TO 100 */
-}
-}
-@media (max-width:480px){
-a{
-  width:100%;
-}
+#films {
+  margin-bottom: -130px;
 }
 
 .film p {
-  margin-bottom: -50px;
+  margin-bottom: -60px;
   background: black;
 }
 
@@ -252,7 +249,7 @@ footer {
   font-family: 'Fredericka the Great';
   text-align: center; 
   background-color: black;
-  width: 100%; 
+  width: 100%;
 }
 footer a {
     color: #3F6498;
