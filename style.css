@@ -28,8 +28,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1.5;
-  color: #ffffcc;
+  color: white;
   background-color: #0B0F0E;
+  background-image: url("background.jpg");
   text-align: left;
 } 
 
@@ -91,6 +92,11 @@ li a:hover {
 
 .main-pic img {
   width: 100%;
+  background-color: black;
+}
+.main-pic{
+    background-color: black;
+
 }
 .section {
   margin: 80px auto;
@@ -125,7 +131,8 @@ li a:hover {
 .wrapper a img {
   height:100%; 
   width:100%;
-  object-fit:cover;}
+  object-fit:cover;
+}
 .wrapper a:before, a:after{
   width:100%;
   position:absolute;
@@ -218,8 +225,8 @@ footer {
   text-align: center; 
 }
 footer a {
+    color: #6C4130;
     text-decoration: none;
-    color: #6C4130; 
 }
 footer a:hover{
   color: white;
