@@ -51,68 +51,88 @@ table {
   border-spacing: 0;
 }
 
-/*My Styles */
-
-nav {
+ul.topnav {
   position: fixed;
-  width: 100%;
-  top: 0px;
   z-index: 1;
-  background-color: #261013;
-  
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
 }
 
-ul {
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
-}
+ul.topnav li {float: left;
+margin-left: 3px;}
 
-li:first-child {
-  margin-right: auto;
-}
-
-li {
+ul.topnav li a {
   display: inline-block;
-  padding: 20px;
-  font-family: 'Fredericka the Great'; 
-  font-size: 200%;
-}
-
-li a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  color: white;  
-  text-shadow: 0 0 3px white;
- 
+  transition: 0.3s;
+  font-size: 2em;
+  font-family: 'Fredericka the Great';
+  text-shadow: 0 0 3px white; 
 }
 
-li a:hover {
-  color: #6C4130; 
+ul.topnav li a:hover {color: #6C4130;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
 }
 
 .main-pic img {
   width: 100%;
-  background-color: black;
 }
 .main-pic{
     background-color: black;
-
+    background-image: url("title_img.jpg");
+    background-size: cover;
+    margin-bottom: -80px;
 }
 .section {
   margin: 80px auto;
-  padding-top: 100px;
+  padding: 20px;
   width:70%;
   max-width: 960px;
   font-family: 'Josefin Slab';
   font-size: 1.5em;
 }
-.about p {
-  margin-bottom: 100px;
-}
+
 .about p:first-letter {
   font-size: 3em;
   font-family: 'Fredericka the Great';
   line-height: 1em;
+}
+.about p{
+  background-color: black;
+  margin-top: 80px;
+
 }
 /*PORTFOLIO*/
 .wrapper{
@@ -169,7 +189,8 @@ a{
 }
 
 .film p {
-  margin-bottom: 30px;
+  margin-bottom: -50px;
+  background: black;
 }
 
 .film h2{
@@ -182,21 +203,29 @@ span {
   font-style: italic;
 }
 
+
 .contact h1{
-  font-size:3em;
+  font-size:3.5em;
   margin-bottom:20px;
+  margin-top: 50px;
   font-family: 'Fredericka the Great';
 }
 .contact p {
   padding-bottom: 20px;
+  background-color: black;
 }
 .email-me {
   text-decoration: none;
-  color: #6C4130;
+  color: #3F6498;
+}
+.email-me:hover{
+  color: white;
 }
 form {
   line-height:1.5em;
   font-family: 'Frecericka the Great';
+  background-color: black;
+  padding: 20px;
 }
 input {
   background-color: #FFFFFF;
@@ -214,7 +243,6 @@ input {
 
 input:hover {
   background-color: #6C4130;
-
 }
 footer {
   padding: 30px;
@@ -225,7 +253,7 @@ footer {
   text-align: center; 
 }
 footer a {
-    color: #6C4130;
+    color: #3F6498;
     text-decoration: none;
 }
 footer a:hover{
