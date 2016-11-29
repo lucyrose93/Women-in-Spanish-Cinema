@@ -219,7 +219,7 @@ footer {
 }
 footer a {
     text-decoration: none;
-    color: #6C4130
+    color: #6C4130; 
 }
 footer a:hover{
   color: white;
