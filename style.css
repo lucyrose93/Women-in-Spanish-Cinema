@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1.5;
   color: white;
-  background-color: #0B0F0E;
+  background-color: black;
   background-image: url("background.jpg");
   text-align: left;
 } 
@@ -135,7 +135,7 @@ ul.topnav li.icon {display: none;}
 
 }
 div.img:hover {
-    border: 5px solid white;
+    border: 2px solid #3F6498;
 }
 
 div.img img {
