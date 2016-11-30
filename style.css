@@ -34,7 +34,7 @@ body {
   text-align: left;
 } 
 
-/*BACKGROUND COLOUR */
+
 ol, ul {
   list-style: none;
 }
@@ -61,6 +61,7 @@ ul.topnav {
   overflow: hidden;
   background-color: black;
 }
+
 
 ul.topnav li {float: left;
 margin-left: 3px;}
@@ -106,15 +107,17 @@ ul.topnav li.icon {display: none;}
   }
 }
 
+.main-pic{
+    background-color: black;
+    background-size: cover;
+    margin-bottom: -80px;
+    z-index: -1; 
+}
+
 .main-pic img {
   width: 100%;
 }
-.main-pic{
-    background-color: black;
-    background-image: url("title_img.jpg");
-    background-size: cover;
-    margin-bottom: -80px;
-}
+
 .section {
   margin: 80px auto;
   padding: 20px;
@@ -123,17 +126,23 @@ ul.topnav li.icon {display: none;}
   font-family: 'Josefin Slab';
   font-size: 1.5em;
 }
-
-.about p:first-letter {
+.about {
+  margin-top: 80px;
+}
+.about h1 {
+  font-family: 'Fredericka the Great';
+  font-size: 2.5em;
+  padding-top: 70px;
+}
+/*.about p:first-letter {
   font-size: 3em;
   font-family: 'Fredericka the Great';
   line-height: 1em;
-}
+}*/
 .about p{
   background-color: black;
-  margin-top: 80px;
-
 }
+
 div.img:hover {
     border: 2px solid #3F6498;
 }
@@ -196,6 +205,7 @@ div.desc {
   padding-top: 100px;
   font-family: 'Fredericka the Great';
 }
+
 span {
   font-style: italic;
 }
